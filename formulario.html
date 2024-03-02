@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+    <title>Formulario</title>
+</head>
+<body class="fondo">
+    <div>
+         <form action="raul.rodriguez@proeducaglobal.com" method="post">
+            <fieldset id="letra_pequena">
+                <h2 class="leg" id="letra_grande">Breaking Bad - Que comience el juego!</h2>
+                    <h3 id="letra_pequena">Datos Personales:</h3>
+                        <p class="postal">
+                            Nombre: <input class="inMedio" type="text" name="" label="nombre" placeholder="Walter">
+                            Apellidos: <input class="inMedio" type="text" name="" label="apellidos" placeholder="White"> 
+                            DNI: <input type="text" name="" label="DNI" placeholder="h3153nb3r6"> 
+                        </p>
+                        <p class="postal">
+                            Correo Electrónico: <input type="email" label="email" name="" id="" placeholder="heisenberg@greymatter.com"> 
+                            Fecha de nacimiento: <input type="text" placeholder="07/09/1958" onfocus="(this.type='date')">
+                        </p>
+                        <div class="radio-grupo">
+                            <span class="label">Sexo: </span>
+                            <div class="radio-opcion">
+                              <input type="radio" id="option1" name="sex" value="male">
+                              <label for="option1">H</label>
+                            </div>
+                            <div class="radio-opcion">
+                              <input type="radio" id="option2" name="sex" value="female">
+                              <label for="option2">F</label>
+                            </div>
+                            <div class="radio-opcion">
+                              <input type="radio" id="option3" name="sex" value="other">
+                              <label for="option3">O</label>
+                            </div>
+                        </div>                        
+                    <h3 id="letra_pequena">Dirección Postal:</h3>
+                        <p class="postal">
+                            Calle:<input type="text" name="Calle" label="Calle" placeholder="Negra Arroyo Lane"> 
+                            Número:<input class="inCorto" type="text" name="numero" label="nr" placeholder="308">
+                            CP:<input class="inCorto" type="text" name="CP" label="CP" placeholder="87104"> 
+                            Ciudad:<input type="text" name="apellidos" label="apellidos" placeholder="Albuquerque">
+                        </p>
+                    <br>
+                    <p>
+                    Elige Personaje:
+                    </p>
+                     <select name="personajes" id="">
+                        <option value="1">Jessie Pinkman</option>
+                        <option value="2">Walter White</option>
+                        <option value="3">Saul Goodman</option>
+                        <option value="4">Gustavo Fring</option>
+                        <option value="5">Pollos Hermanos</option>
+                        <option value="6">Otros Personajes</option>
+                    </select>
+                    <br>
+                    <br><textarea name="" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <div class="file-input">
+                        <input type="file" id="myFileInput">
+                        <label for="myFileInput">Adjuntar Archivo</label>
+                    </div>
+                <br><br><br>
+                <div class="boton-input">
+                    <label for="boton">Enviar
+                        <input type="submit" value="Enviar"> 
+                    </label>
+                    <label for="boton">Borrar
+                        <input type="reset" value="Borrar">
+                    </label>
+                </div>
+            </fieldset>
+        </div> 
+        <br> 
+        <div class="contenedor"> 
+            <img class="meth" src="img/crystalmeth.png" alt="bolsa" usemap="#meth"> 
+            <map name="meth">
+                <area shape="rect" href="index.html" coords="13,7,144,143""> <!--No meto target blank porque no lo pide-->
+            </map> 
+            <div class="centro" id="letra_grande">VOLVER</div>
+        </div>     
+</body>
+</html>

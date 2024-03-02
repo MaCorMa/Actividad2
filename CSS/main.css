@@ -1,0 +1,268 @@
+
+/*General*/
+@font-face {
+    font-family: "bbad";
+    src: url(../font/Breaking\ Bad.ttf);
+}
+/*etiquetas*/
+body{/*Lo pongo en body por ser mas sencillo, sirve y no se especifica nada mas. Pero entiendo que si la página tuviera footer o header esto no serviria*/
+    background-color: #0c3e11 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+legend{
+    display: none;
+}
+input{
+    max-width: 100px;
+}
+fieldset{
+    border: 0;
+}
+textarea{
+    background-image: url(../img/sauldespacho.png);
+    width: 350px;
+    height: 350px;
+    background-size: 100% 100%;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    background-color:  #286090;
+    color: #fff;
+}
+
+input[type="email"], input[type="text"], select, input[type="radio"] + label{
+    background: none;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+input[type="file"], input[type="submit"], input[type="reset"]{
+    display: none;/*Para poder customizar botones*/
+}
+table{
+    margin: auto;
+    background-color: #333;
+    padding: 5px;
+}
+td,tr{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid;
+    border-color: #333;
+}
+
+
+/*Clases*/
+.fondo{
+   background-image: url(../img/fondo.jpg);
+   background-repeat: no-repeat; 
+   background-size: 100% 100%;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+.leg{
+    color: black;
+    text-align: left;  
+}
+.postal{
+    display: flex;
+    column-gap: 10px;
+}
+.inCorto{
+    max-width: 30px;
+}
+.inMedio{
+    max-width: 75px;
+}
+.radio{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.radio-grupo {
+    display: flex;
+    align-items: center;
+}
+ 
+.radio-opcion {
+    position: relative;
+    margin-right: 10px;
+}
+.boton-input label:hover {
+    background-color: #286090;
+}
+.file-input label:hover {
+    background-color: #286090;
+}
+/*Esto está pedido a ChatGPT, no debería evaluarse, he tenido que retocar pero no lo he pensado yo. 
+No sabía como modificar el botón del input=file
+Hay que hacer este rodeo para lograrlo*/
+.file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+  
+.file-input input[type=file] {
+    position: absolute;
+    font-size: 80px;
+    cursor: pointer;
+}
+/*Hasta aquí lo chatgpeteado*/
+
+.file-input label, .boton-input label {
+    display: inline-block;
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.meth{
+    background: none;
+}
+.contenedor{
+    position: relative;
+    text-align: center;
+    color: #333;
+  }
+.centro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-weight: 600;
+}
+.padre{
+    text-align: center;
+}
+.hijo{
+    margin: auto;
+    display: inline-block;   
+}
+.brba{
+    background-color: yellowgreen;
+    color: #2b2c24;
+    font-weight: 600;
+    font-size: 80px;
+}
+.bb{
+    color: white;
+    letter-spacing: 8px;
+    font-weight: 500; /*Visualmente queda mas fino en blanco, se le meto menos weight*/
+    font-size: 80px;
+}
+.periodic{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 100;
+    color: red;
+    width: 100%;
+    max-width: 150px;
+    text-align: left;
+    margin-left: 0px;
+}
+.lima{
+    background-color: #b7da14;
+}
+.verdclar{
+    background-color: #c7e04a;
+}
+.verdoscur{
+    background-color:#89a419;
+}
+.militar{
+    background-color: #637126;
+}
+.kaki{
+    background-color: #818d4e;
+}
+.gris{
+    background-color:#bcc39f;
+}
+.lila{
+    background-color: #ab8ecd;
+}
+.amarclaro{
+    background-color: #d4e878;
+}
+.amar{
+    background-color: #c0c530;
+}
+.hueso{
+    background-color: #eff6c8;
+}
+
+/*ids*/
+#index{
+    font-family: bbad;
+}
+#letra_grande{
+    font-size: 14px;
+}
+#letra_pequena{
+    font-size: 10px;
+}
+#logo{
+    width: 200px;
+    height: 200px;
+}
+#poster{
+    width: 700px;
+    height: 300px;
+    border-width: 10px;
+    border-style: outset; 
+    border-color: brown;
+    border-radius: 22px;
+}
+#breaking{
+    position: relative;
+    left: -70px;
+}
+#partido{
+    background: linear-gradient(
+    91deg,
+    #b7da14 51%,
+    #eff6c8 49%
+    )
+}
+#letra{
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+#ww{
+    max-width: 55px;
+    overflow: hidden;
+    position: relative;
+    right: 4px ;
+}
+#gun{
+    clip-path: inset(0 0 0 10%); 
+}
+
+/*Pseudo elementos*/
+::placeholder {
+    color: black;
+  }
